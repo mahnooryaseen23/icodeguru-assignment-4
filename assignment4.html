@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div
+      style="position: absolute; margin-top: 20%; margin-left: 20%; width: 50%"
+    >
+      <h1>CHANGE PARAGRAPH</h1>
+      <p id="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum animi
+        quasi asperiores aliquid iure qui labore ducimus ad porro. Officiis odit
+        autem laboriosam magni porro harum earum eius expedita impedit.
+      </p>
+
+      <button
+        style="
+          background-color: rgb(126, 114, 192);
+          width: 100px;
+          height: 50px;
+          color: antiquewhite;
+        "
+        id="change"
+      >
+        Click to change
+      </button>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", (event) => {
+        const paragraph = document.getElementById("para");
+        const button = document.getElementById("change");
+
+        button.addEventListener("click", () => {
+          paragraph.textContent = "TEXT CHANGED ON CLICKING";
+        });
+      });
+    </script>
+  </body>
+</html>
